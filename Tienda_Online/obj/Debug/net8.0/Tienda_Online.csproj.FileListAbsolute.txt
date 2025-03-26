@@ -1,0 +1,14 @@
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\bin\Debug\net8.0\Tienda_Online.exe
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\bin\Debug\net8.0\Tienda_Online.deps.json
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\bin\Debug\net8.0\Tienda_Online.runtimeconfig.json
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\bin\Debug\net8.0\Tienda_Online.dll
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\bin\Debug\net8.0\Tienda_Online.pdb
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\obj\Debug\net8.0\Tienda_Online.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\obj\Debug\net8.0\Tienda_Online.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\obj\Debug\net8.0\Tienda_Online.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\obj\Debug\net8.0\Tienda_Online.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\obj\Debug\net8.0\Tienda_Online.dll
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\obj\Debug\net8.0\refint\Tienda_Online.dll
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\obj\Debug\net8.0\Tienda_Online.pdb
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\obj\Debug\net8.0\Tienda_Online.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Escritorio\Codigos-Tercer Semestre\Programacion II\Tienda_Online\obj\Debug\net8.0\ref\Tienda_Online.dll
