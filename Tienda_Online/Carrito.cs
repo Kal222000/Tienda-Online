@@ -138,8 +138,15 @@ public class Carrito
 					int total = 0;
 					for(int i = 0; i <= this.cantidad; i++)
 					{
-						total += this.lista[i].get_precio();
-						this.ventas.agregar_producto_vendido(this.lista[i]);
+                        if (this.lista[i] == null)
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            total += this.lista[i].get_precio();
+                            this.ventas.agregar_producto_vendido(this.lista[i]);
+                        }
 					}
 					Factura factura = new Factura(nit, nombre, this.lista, usuario.get_pago(), total, this.cantidad);
                     return factura;
@@ -149,8 +156,15 @@ public class Carrito
                     int total = 0;
                     for (int i = 0; i <= this.cantidad; i++)
                     {
-                        total += this.lista[i].get_precio();
-                        this.ventas.agregar_producto_vendido(this.lista[i]);
+						if (this.lista[i] == null)
+						{
+							continue;
+						}
+						else
+						{
+                            total += this.lista[i].get_precio();
+                            this.ventas.agregar_producto_vendido(this.lista[i]);
+                        }
                     }
                     Factura factura = new Factura(0, "Sin nombre", this.lista, usuario.get_pago(), total, this.cantidad);
 					return factura;
@@ -219,6 +233,58 @@ public class Carrito
                 {
                     aux[i].set_vendido(false);
                     return;
+                }
+            }
+        }
+    }
+
+	public void busqueda()
+	{
+        Console.Write("Ingrese la palabra que desea buscar: ");
+		string buscar = Console.ReadLine();
+		if(buscar == "")
+		{
+			return;
+		}
+		buscar = buscar.ToLower();
+        int contador = 1;
+		int cantidad_productos = inventario.get_cantidad_productos();
+		Producto[] productos = inventario.get_producstos();
+        for (int i = 0; i <= cantidad_productos; i++)
+        {
+            if ((productos[i].get_vendido() == false))
+            {
+                string nombre = productos[i].get_nombre();
+                if (nombre.Length < buscar.Length)
+                {
+                    continue;
+                }
+                else
+                {
+                    bool verificador = false;
+					int pos = 0;
+					nombre = nombre.ToLower();
+                    for (int l = 0; l < nombre.Length; l++)
+                    {
+                        if (nombre[l] == buscar[pos])
+                        {
+							pos++;
+                            if(pos == buscar.Length)
+							{
+								verificador = true;
+								break;
+							}
+                        }
+						else
+						{
+							pos = 0;
+						}
+                    }
+                    if (verificador == true)
+                    {
+                        Console.WriteLine("Producto " + contador + ": " + productos[i].get_nombre() + "     Categoria: " + productos[i].get_categoria());
+                        contador++;
+                    }
                 }
             }
         }

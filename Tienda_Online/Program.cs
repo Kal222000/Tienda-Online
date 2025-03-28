@@ -3,6 +3,11 @@ inventario.producto1();
 inventario.producto2();
 inventario.producto3();
 inventario.producto4();
+inventario.producto6();
+inventario.producto5();
+inventario.producto7();
+inventario.producto8();
+inventario.producto9();
 VentaGeneral general = new VentaGeneral();
 Reporte reporte = new Reporte(DateTime.Now);
 string comando = "";
@@ -108,7 +113,7 @@ while (true)
                     Carrito carrito = new Carrito(inventario,general);
                     while (true)
                     {
-                        Console.WriteLine("1 Ver Productos || 2 Agregar Producto || 3 Eliminar Producto || 4 Comprar || 5 Mostrar Carrito || 6 Cerrar sesion");
+                        Console.WriteLine("1 Ver Productos || 2 Agregar Producto || 3 Eliminar Producto || 4 Comprar || 5 Mostrar Carrito || 6 Cerrar sesion || 7 Buscar Producto");
                         Console.Write("Ingrese comando:");
                         comando = Console.ReadLine();
                         Console.WriteLine();
@@ -166,6 +171,12 @@ while (true)
                             usuario = null;
                             Console.WriteLine();
                             break;
+                        }
+                        else if(comando[0] == '7')
+                        {
+                            Console.WriteLine("Busqueda de producto");
+                            carrito.busqueda();
+                            Console.WriteLine();
                         }
                         else
                         {

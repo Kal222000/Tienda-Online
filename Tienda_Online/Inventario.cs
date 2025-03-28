@@ -111,7 +111,14 @@ public class Inventario
                 int cantidad = this.lista_categorias[i].get_cantidad_de_productos();
                 for (int j = 0; j <= cantidad; j++)
                 {
-                    Console.WriteLine("Producto " + j + ": " + productos[j].get_nombre());
+                    if (productos[j] == null)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Producto " + j + ": " + productos[j].get_nombre());
+                    }
                 }
                 Console.Write("Ingrese el nombre del producto o next:");
                 string nombre_producto = Console.ReadLine();
@@ -340,6 +347,49 @@ public class Inventario
         this.productos[this.cantidad_productos] = producto;
         this.lista_categorias[0].asociar_producto(producto);
     }
+    public void producto5()
+    {
+        string categoria = "Base";
+        Producto producto = new Producto("Galleta Levi", "Crujientes y doradas", categoria, 50);
+        this.cantidad_productos++;
+        this.productos[this.cantidad_productos] = producto;
+        this.lista_categorias[0].asociar_producto(producto);
+    }
 
+    public void producto6()
+    {
+        string categoria = "Base";
+        Producto producto = new Producto("Galleta Shrek", "Hechas en un pantano", categoria, 50);
+        this.cantidad_productos++;
+        this.productos[this.cantidad_productos] = producto;
+        this.lista_categorias[0].asociar_producto(producto);
+    }
+
+    public void producto7()
+    {
+        string categoria = "Base";
+        Producto producto = new Producto("Galleta Miyamura", "Hechas por Izumi Miyamura", categoria, 50);
+        this.cantidad_productos++;
+        this.productos[this.cantidad_productos] = producto;
+        this.lista_categorias[0].asociar_producto(producto);
+    }
+
+    public void producto8()
+    {
+        string categoria = "Base";
+        Producto producto = new Producto("Galleta Mabel", "Hechas por Mabel", categoria, 50);
+        this.cantidad_productos++;
+        this.productos[this.cantidad_productos] = producto;
+        this.lista_categorias[0].asociar_producto(producto);
+    }
+
+    public void producto9()
+    {
+        string categoria = "Base";
+        Producto producto = new Producto("Galleta Choco soda", "Hechas a base de coca cola", categoria, 50);
+        this.cantidad_productos++;
+        this.productos[this.cantidad_productos] = producto;
+        this.lista_categorias[0].asociar_producto(producto);
+    }
 
 }
